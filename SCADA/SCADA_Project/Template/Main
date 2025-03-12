@@ -1,0 +1,122 @@
+#Version: 0x030217
+#Access: 0
+#Pos: 0,0
+#Size: 949,577
+#BkColor: clBtnFace
+#Gates: 0
+#Style: Standard
+#StayOnTop: 0
+#Object: Switch
+  #ID: 0
+  #Pos: 205,505
+  #Size: 167,72
+  #TransparentColor: 0,128,128
+  #Cursor: 0
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 370,505
+  #Size: 167,72
+  #TransparentColor: 0,128,128
+  #Cursor: 0
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 535,505
+  #Size: 167,72
+  #TransparentColor: 0,128,128
+  #Cursor: 0
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 910,5
+  #Size: 35,32
+  #TransparentColor: 0,128,128
+  #Cursor: 0
+  #BmpRes: 2
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 255,230
+  #Size: 143,94
+  #Cursor: 0
+  #PBmpFile: 0,conv1.bmp
+  #TabOrder: 0
+  #CycleTime: 0,0
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 405,230
+  #Size: 143,94
+  #Cursor: 0
+  #PBmpFile: 0,conv1.bmp
+  #TabOrder: 1
+  #CycleTime: 0,0
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 555,230
+  #Size: 143,94
+  #Cursor: 0
+  #PBmpFile: 0,conv1.bmp
+  #TabOrder: 2
+  #CycleTime: 0,0
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 105,230
+  #Size: 143,94
+  #Cursor: 0
+  #PBmpFile: 0,conv1.bmp
+  #TabOrder: 3
+  #CycleTime: 0,0
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 705,230
+  #Size: 143,94
+  #Cursor: 0
+  #PBmpFile: 0,conv1.bmp
+  #TabOrder: 4
+  #CycleTime: 0,0
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 255,85
+  #Size: 138,138
+  #Cursor: 0
+  #PBmpFile: 0,mac1.bmp
+  #TabOrder: 5
+  #CycleTime: 0,0
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 555,80
+  #Size: 138,138
+  #Cursor: 0
+  #PBmpFile: 0,mac1.bmp
+  #TabOrder: 6
+  #CycleTime: 0,0
+  #Access: 0
+#EndObj

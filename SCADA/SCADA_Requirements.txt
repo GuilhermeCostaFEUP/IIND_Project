@@ -1,0 +1,17 @@
+O	1. Só uma linha de produção
+O	2. Estados de todos os tapetes (on / off)
+O	3. Estados da máquina (trabalhar / parada ; ferramenta equipada ; ferramentas que pode equipar)
+O	4. Tempo e data
+O	5. Botões para cada estado de operação que a máquina pode ter:
+O		5.1 Automatico
+O			- Controlada pelo PLC
+O		5.2 Manual
+O			- Botão/Botões para Operar / Parar
+O			- Botão para Mudar ferramenta (mostrar ferramentas possíveis???)
+O			- Botão para enviar a peça para a frente
+O		5.3 Manutenção
+O			- Desligada
+O	6. Lista de eventos
+O	7. Lista de alarmes (Colocar aviso visual de que existem x alarmes)
+O		7.1 Alarme quando peça fica mais de 10 segundos debaixo da máquina quando operação acaba
+O	8. Usar Modbus/TCP para comunicar SCADA-PLC
