@@ -15,11 +15,11 @@
 #StayOnTop: 0
 #Object: Switch
   #ID: 0
-  #Pos: 205,505
-  #Size: 167,72
+  #Pos: 225,505
+  #Size: 170,82
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #OnMask: 5,0001,0001
@@ -27,56 +27,44 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 370,505
-  #Size: 167,72
+  #Pos: 550,505
+  #Size: 170,82
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
-  #NeedApply: 0
-  #Mode: 1
-  #OnMask: 0,0001,0001
-  #Access: 0
-#EndObj
-#Object: Switch
-  #ID: 0
-  #Pos: 535,505
-  #Size: 167,72
-  #TransparentColor: 0,128,128
-  #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 115,250
+  #Pos: 110,250
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 115,150
+  #Pos: 110,150
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 115,200
+  #Pos: 110,200
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
@@ -87,7 +75,7 @@
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
@@ -98,7 +86,7 @@
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
@@ -109,40 +97,40 @@
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 495,250
+  #Pos: 485,250
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 495,150
+  #Pos: 485,150
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 495,200
+  #Pos: 485,200
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
@@ -153,7 +141,7 @@
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
@@ -164,7 +152,7 @@
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
@@ -175,59 +163,108 @@
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 245,90
+  #Pos: 240,90
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 245,40
+  #Pos: 240,40
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 625,90
+  #Pos: 620,90
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 625,40
+  #Pos: 620,40
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #BmpRes: 1
+  #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
   #Access: 0
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 560,530
+  #Size: 27,27
+  #Cursor: 0
+  #OffPBmpFile: Alarm(blanck).bmp
+  #OnPBmpFile: Alarm(red).bmp
+  #BmpBkC: 0,128,128
+  #On: 0,6,1
+  #Flashing: 5
+  #Access: 16384
+#EndObj
+#Object: Led
+  #ID: 0
+  #Pos: 690,530
+  #Size: 27,27
+  #Cursor: 0
+  #OffPBmpFile: Alarm(blanck).bmp
+  #OnPBmpFile: Alarm(red).bmp
+  #BmpBkC: 0,128,128
+  #On: 0,6,1
+  #Flashing: 5
+  #Access: 16384
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 391,505
+  #Size: 165,82
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #PBmpFile: Buttons(square).bmp
+  #NeedApply: 0
+  #Mode: 1
+  #OnMask: 0,0001,0000
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 225,505
+  #Size: 170,82
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,18,0000
+  #Label: Eventos
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
 #EndObj
 #Object: Bitmap
   #ID: 0
-  #Pos: 180,90
-  #Size: 220,250
+  #Pos: 200,150
+  #Size: 175,165
   #Cursor: 0
   #PBmpFile: 0,m000.bmp
   #PBmpFile: 0,m001.bmp
@@ -409,8 +446,8 @@
 #EndObj
 #Object: Bitmap
   #ID: 0
-  #Pos: 560,90
-  #Size: 220,250
+  #Pos: 575,150
+  #Size: 180,165
   #Cursor: 0
   #PBmpFile: 0,m000.bmp
   #PBmpFile: 0,m001.bmp
@@ -434,4 +471,30 @@
   #CycleTime: 1,0
   #CycleTime: 2,0
   #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 390,505
+  #Size: 165,77
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,18,0000
+  #Label: Linha de Produção
+  #Align: 21
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 555,505
+  #Size: 165,82
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,18,0000
+  #Label: Alarmes
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
 #EndObj
