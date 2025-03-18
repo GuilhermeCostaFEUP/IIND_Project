@@ -1,26 +1,26 @@
 #Version: 0x030217
 #Access: 0
 #Pos: 0,0
-#Size: 899,691
-#BkColor: clBtnFace
+#Size: 947,589
+#BkColor: clInactiveBorder
 #Gates: 0
-#Style: Standard
+#Style: FixedNoBorder
 #StayOnTop: 0
-#Object: HistoricalView
+#Object: OnlineView
   #ID: 0
-  #Pos: 149,85
-  #Size: 600,520
-  #DateWidth: 100,"Date"
-  #TimeWidth: 100,"Time"
-  #TimeRange: 3600
-  #RowOptions: 1,1,0,1,0
-  #PageType: 0
-  #Gates: 0
-  #showServerButton: 0
-  #ShowCfgButton: 1
-  #ShowPrintButton: 1
-  #ShowSaveCSVButton: 1
-  #WndBkgndColor: clBtnFace
+  #Pos: 5,5
+  #Size: 935,575
+  #Class1: -1
+  #Class2: 
+  #AlarmsOrEvents: 1
+  #ShowSortButton: 1
+  #ShowFilterButton: 1
+  #ShowConfirmButton: 1
+  #ShowConfirmAllButton: 1
+  #ShowExcludeChkBox: 1
+  #WndBkgndColor: clActiveCaption
+  #AlarmListBkgndColor: clInactiveCaption
   #Font: Segoe UI,9,0000
-  #DefaultServer: Local
+  #UseCustomColumns: 0
+  #Columns: "Active","Attivo","50","Ack","Conferma","50","Message","Messaggio","350","Date","Data","80","Time","Ora","80","Class 1","Classe_1","80","Class 2","Classe_2","80","To Ack","A_Ritenuta","80","Excluded","Escluso","80"
 #EndObj

@@ -1,10 +1,16 @@
 #Version: 0x030217
 #Access: 0
 #Pos: 0,0
-#Size: 947,589
-#BkColor: clBtnFace
-#Gates: 1
-  #DIG: HelpScreen,0
+#Size: 948,589
+#BkColor: clInactiveCaption
+#Gates: 7
+  #DIG: ConvFLAG,0
+  #DIG: ConvFLAG,4
+  #DIG: ConvFLAG,3
+  #DIG: ConvFLAG,2
+  #DIG: ConvFLAG,1
+  #DIG: MacFLAG,0
+  #DIG: MacFLAG,1
 #Style: FixedNoBorder
 #StayOnTop: 0
 #Object: Switch
@@ -16,6 +22,7 @@
   #BmpRes: 1
   #NeedApply: 0
   #Mode: 1
+  #OnMask: 5,0001,0001
   #Access: 0
 #EndObj
 #Object: Switch
@@ -27,6 +34,7 @@
   #BmpRes: 1
   #NeedApply: 0
   #Mode: 1
+  #OnMask: 0,0001,0001
   #Access: 0
 #EndObj
 #Object: Switch
@@ -42,75 +50,184 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 910,5
-  #Size: 35,32
+  #Pos: 115,250
+  #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
-  #PBmpFile: HelpButtons.png
+  #BmpRes: 1
   #NeedApply: 0
   #Mode: 1
-  #OnMask: 0,0001,0000
   #Access: 0
 #EndObj
-#Object: Led
+#Object: Switch
   #ID: 0
-  #Pos: 140,380
-  #Size: 40,40
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 12
-  #BmpBkC: 0,128,128
-  #Flashing: 0
+  #Pos: 115,150
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
   #Access: 0
 #EndObj
-#Object: Led
+#Object: Switch
   #ID: 0
-  #Pos: 285,380
-  #Size: 40,40
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 12
-  #BmpBkC: 0,128,128
-  #Flashing: 0
+  #Pos: 115,200
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
   #Access: 0
 #EndObj
-#Object: Led
+#Object: Switch
   #ID: 0
-  #Pos: 430,380
-  #Size: 40,40
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 12
-  #BmpBkC: 0,128,128
-  #Flashing: 0
+  #Pos: 380,250
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
   #Access: 0
 #EndObj
-#Object: Led
+#Object: Switch
   #ID: 0
-  #Pos: 575,380
-  #Size: 40,40
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 12
-  #BmpBkC: 0,128,128
-  #Flashing: 0
+  #Pos: 380,150
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
   #Access: 0
 #EndObj
-#Object: Led
+#Object: Switch
   #ID: 0
-  #Pos: 720,380
-  #Size: 40,40
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 12
-  #BmpBkC: 0,128,128
-  #Flashing: 0
+  #Pos: 380,200
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 495,250
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 495,150
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 495,200
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 760,250
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 760,150
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 760,200
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 245,90
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 245,40
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 625,90
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 625,40
+  #Size: 87,52
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #BmpRes: 1
+  #NeedApply: 0
+  #Mode: 1
   #Access: 0
 #EndObj
 #Object: Bitmap
   #ID: 0
-  #Pos: 200,50
-  #Size: 200,220
+  #Pos: 180,90
+  #Size: 220,250
   #Cursor: 0
   #PBmpFile: 0,m000.bmp
   #PBmpFile: 0,m001.bmp
@@ -125,150 +242,175 @@
   #PBmpFile: 0,m010.bmp
   #PBmpFile: 0,m011.bmp
   #PBmpFile: 0,m012.bmp
-  #TabOrder: 5
-  #CycleTime: 0,1
-  #Access: 0
-  #Object: Led
-    #ID: 0
-    #Pos: 140,65
-    #Size: 30,35
-    #Cursor: 0
-    #OffBmpRes: 31
-    #OnBmpRes: 12
-    #BmpBkC: 0,128,128
-    #Flashing: 0
-    #Access: 0
-  #EndObj
-#EndObj
-#Object: Bitmap
-  #ID: 0
-  #Pos: 100,265
-  #Size: 116,94
-  #Cursor: 0
-  #PBmpFile: 0,000.bmp
-  #PBmpFile: 0,001.bmp
-  #PBmpFile: 0,002.bmp
-  #PBmpFile: 0,003.bmp
-  #PBmpFile: 0,004.bmp
-  #PBmpFile: 0,005.bmp
-  #PBmpFile: 0,006.bmp
-  #PBmpFile: 0,007.bmp
-  #PBmpFile: 0,008.bmp
-  #PBmpFile: 0,009.bmp
-  #PBmpFile: 0,010.bmp
-  #PBmpFile: 0,011.bmp
-  #PBmpFile: 0,012.bmp
-  #PBmpFile: 0,013.bmp
-  #PBmpFile: 0,014.bmp
-  #PBmpFile: 0,015.bmp
-  #TabOrder: 0
-  #CycleTime: 0,0
-  #Access: 0
-#EndObj
-#Object: Bitmap
-  #ID: 0
-  #Pos: 245,265
-  #Size: 116,94
-  #Cursor: 0
-  #PBmpFile: 0,000.bmp
-  #PBmpFile: 0,001.bmp
-  #PBmpFile: 0,002.bmp
-  #PBmpFile: 0,003.bmp
-  #PBmpFile: 0,004.bmp
-  #PBmpFile: 0,005.bmp
-  #PBmpFile: 0,006.bmp
-  #PBmpFile: 0,007.bmp
-  #PBmpFile: 0,008.bmp
-  #PBmpFile: 0,009.bmp
-  #PBmpFile: 0,010.bmp
-  #PBmpFile: 0,011.bmp
-  #PBmpFile: 0,012.bmp
-  #PBmpFile: 0,013.bmp
-  #PBmpFile: 0,014.bmp
-  #PBmpFile: 0,015.bmp
+  #PBmpFile: 1,m0-1.bmp
+  #PBmpFile: 2,m0-2.bmp
   #TabOrder: 1
-  #CycleTime: 0,0
+  #Status: 0,5,6,1
+  #Status: 1,5,6,0
+  #CycleTime: 0,1
+  #CycleTime: 1,0
+  #CycleTime: 2,0
   #Access: 0
 #EndObj
 #Object: Bitmap
   #ID: 0
-  #Pos: 390,265
-  #Size: 116,94
+  #Pos: 15,325
+  #Size: 161,114
   #Cursor: 0
-  #PBmpFile: 0,000.bmp
-  #PBmpFile: 0,001.bmp
-  #PBmpFile: 0,002.bmp
-  #PBmpFile: 0,003.bmp
-  #PBmpFile: 0,004.bmp
-  #PBmpFile: 0,005.bmp
-  #PBmpFile: 0,006.bmp
-  #PBmpFile: 0,007.bmp
-  #PBmpFile: 0,008.bmp
-  #PBmpFile: 0,009.bmp
-  #PBmpFile: 0,010.bmp
-  #PBmpFile: 0,011.bmp
-  #PBmpFile: 0,012.bmp
-  #PBmpFile: 0,013.bmp
-  #PBmpFile: 0,014.bmp
-  #PBmpFile: 0,015.bmp
+  #PBmpFile: 0,ca1.bmp
+  #PBmpFile: 0,ca2.bmp
+  #PBmpFile: 0,ca3.bmp
+  #PBmpFile: 0,ca4.bmp
+  #PBmpFile: 0,ca5.bmp
+  #PBmpFile: 0,ca6.bmp
+  #PBmpFile: 0,ca7.bmp
+  #PBmpFile: 0,ca8.bmp
+  #PBmpFile: 0,ca9.bmp
+  #PBmpFile: 0,ca10.bmp
+  #PBmpFile: 0,ca11.bmp
+  #PBmpFile: 0,ca12.bmp
+  #PBmpFile: 0,ca13.bmp
+  #PBmpFile: 0,ca14.bmp
+  #PBmpFile: 0,ca15.bmp
+  #PBmpFile: 0,ca16.bmp
+  #PBmpFile: 1,ci1.bmp
+  #TabOrder: 0
+  #Status: 0,0,6,1
+  #Status: 1,0,6,0
+  #CycleTime: 0,0
+  #CycleTime: 1,0
+  #Access: 0
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 52,26
+    #Size: 57,62
+    #Cursor: 0
+    #PBmpFile: 0,bc1.bmp
+    #TabOrder: 0
+    #CycleTime: 0,0
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 205,325
+  #Size: 161,114
+  #Cursor: 0
+  #PBmpFile: 0,ca1.bmp
+  #PBmpFile: 0,ca2.bmp
+  #PBmpFile: 0,ca3.bmp
+  #PBmpFile: 0,ca4.bmp
+  #PBmpFile: 0,ca5.bmp
+  #PBmpFile: 0,ca6.bmp
+  #PBmpFile: 0,ca7.bmp
+  #PBmpFile: 0,ca8.bmp
+  #PBmpFile: 0,ca9.bmp
+  #PBmpFile: 0,ca10.bmp
+  #PBmpFile: 0,ca11.bmp
+  #PBmpFile: 0,ca12.bmp
+  #PBmpFile: 0,ca13.bmp
+  #PBmpFile: 0,ca14.bmp
+  #PBmpFile: 0,ca15.bmp
+  #PBmpFile: 0,ca16.bmp
+  #PBmpFile: 1,ci1.bmp
   #TabOrder: 2
+  #Status: 0,4,6,1
+  #Status: 1,4,6,0
   #CycleTime: 0,0
+  #CycleTime: 1,0
   #Access: 0
 #EndObj
 #Object: Bitmap
   #ID: 0
-  #Pos: 535,265
-  #Size: 116,94
+  #Pos: 395,325
+  #Size: 161,114
   #Cursor: 0
-  #PBmpFile: 0,000.bmp
-  #PBmpFile: 0,001.bmp
-  #PBmpFile: 0,002.bmp
-  #PBmpFile: 0,003.bmp
-  #PBmpFile: 0,004.bmp
-  #PBmpFile: 0,005.bmp
-  #PBmpFile: 0,006.bmp
-  #PBmpFile: 0,007.bmp
-  #PBmpFile: 0,008.bmp
-  #PBmpFile: 0,009.bmp
-  #PBmpFile: 0,010.bmp
-  #PBmpFile: 0,011.bmp
-  #PBmpFile: 0,012.bmp
-  #PBmpFile: 0,013.bmp
-  #PBmpFile: 0,014.bmp
-  #PBmpFile: 0,015.bmp
+  #PBmpFile: 0,ca1.bmp
+  #PBmpFile: 0,ca2.bmp
+  #PBmpFile: 0,ca3.bmp
+  #PBmpFile: 0,ca4.bmp
+  #PBmpFile: 0,ca5.bmp
+  #PBmpFile: 0,ca6.bmp
+  #PBmpFile: 0,ca7.bmp
+  #PBmpFile: 0,ca8.bmp
+  #PBmpFile: 0,ca9.bmp
+  #PBmpFile: 0,ca10.bmp
+  #PBmpFile: 0,ca11.bmp
+  #PBmpFile: 0,ca12.bmp
+  #PBmpFile: 0,ca13.bmp
+  #PBmpFile: 0,ca14.bmp
+  #PBmpFile: 0,ca15.bmp
+  #PBmpFile: 0,ca16.bmp
+  #PBmpFile: 1,ci1.bmp
   #TabOrder: 3
+  #Status: 0,3,6,1
+  #Status: 1,3,6,0
   #CycleTime: 0,0
+  #CycleTime: 1,0
   #Access: 0
 #EndObj
 #Object: Bitmap
   #ID: 0
-  #Pos: 680,265
-  #Size: 116,94
+  #Pos: 585,325
+  #Size: 161,114
   #Cursor: 0
-  #PBmpFile: 0,000.bmp
-  #PBmpFile: 0,001.bmp
-  #PBmpFile: 0,002.bmp
-  #PBmpFile: 0,003.bmp
-  #PBmpFile: 0,004.bmp
-  #PBmpFile: 0,005.bmp
-  #PBmpFile: 0,006.bmp
-  #PBmpFile: 0,007.bmp
-  #PBmpFile: 0,008.bmp
-  #PBmpFile: 0,009.bmp
-  #PBmpFile: 0,010.bmp
-  #PBmpFile: 0,011.bmp
-  #PBmpFile: 0,012.bmp
-  #PBmpFile: 0,013.bmp
-  #PBmpFile: 0,014.bmp
-  #PBmpFile: 0,015.bmp
+  #PBmpFile: 0,ca1.bmp
+  #PBmpFile: 0,ca2.bmp
+  #PBmpFile: 0,ca3.bmp
+  #PBmpFile: 0,ca4.bmp
+  #PBmpFile: 0,ca5.bmp
+  #PBmpFile: 0,ca6.bmp
+  #PBmpFile: 0,ca7.bmp
+  #PBmpFile: 0,ca8.bmp
+  #PBmpFile: 0,ca9.bmp
+  #PBmpFile: 0,ca10.bmp
+  #PBmpFile: 0,ca11.bmp
+  #PBmpFile: 0,ca12.bmp
+  #PBmpFile: 0,ca13.bmp
+  #PBmpFile: 0,ca14.bmp
+  #PBmpFile: 0,ca15.bmp
+  #PBmpFile: 0,ca16.bmp
+  #PBmpFile: 1,ci1.bmp
   #TabOrder: 4
+  #Status: 0,2,6,1
+  #Status: 1,2,6,0
   #CycleTime: 0,0
+  #CycleTime: 1,0
   #Access: 0
 #EndObj
 #Object: Bitmap
   #ID: 0
-  #Pos: 490,50
-  #Size: 200,220
+  #Pos: 775,325
+  #Size: 156,114
+  #Cursor: 0
+  #PBmpFile: 0,ca1.bmp
+  #PBmpFile: 0,ca2.bmp
+  #PBmpFile: 0,ca3.bmp
+  #PBmpFile: 0,ca4.bmp
+  #PBmpFile: 0,ca5.bmp
+  #PBmpFile: 0,ca6.bmp
+  #PBmpFile: 0,ca7.bmp
+  #PBmpFile: 0,ca8.bmp
+  #PBmpFile: 0,ca9.bmp
+  #PBmpFile: 0,ca10.bmp
+  #PBmpFile: 0,ca11.bmp
+  #PBmpFile: 0,ca12.bmp
+  #PBmpFile: 0,ca13.bmp
+  #PBmpFile: 0,ca14.bmp
+  #PBmpFile: 0,ca15.bmp
+  #PBmpFile: 0,ca16.bmp
+  #PBmpFile: 1,ci1.bmp
+  #TabOrder: 5
+  #Status: 0,1,6,1
+  #Status: 1,1,6,0
+  #CycleTime: 0,0
+  #CycleTime: 1,0
+  #Access: 0
+#EndObj
+#Object: Bitmap
+  #ID: 0
+  #Pos: 560,90
+  #Size: 220,250
   #Cursor: 0
   #PBmpFile: 0,m000.bmp
   #PBmpFile: 0,m001.bmp
@@ -283,18 +425,13 @@
   #PBmpFile: 0,m010.bmp
   #PBmpFile: 0,m011.bmp
   #PBmpFile: 0,m012.bmp
+  #PBmpFile: 1,m0-1.bmp
+  #PBmpFile: 2,m0-2.bmp
   #TabOrder: 6
+  #Status: 0,6,6,1
+  #Status: 1,6,6,0
   #CycleTime: 0,1
+  #CycleTime: 1,0
+  #CycleTime: 2,0
   #Access: 0
-  #Object: Led
-    #ID: 0
-    #Pos: 140,65
-    #Size: 30,35
-    #Cursor: 0
-    #OffBmpRes: 31
-    #OnBmpRes: 12
-    #BmpBkC: 0,128,128
-    #Flashing: 0
-    #Access: 0
-  #EndObj
 #EndObj

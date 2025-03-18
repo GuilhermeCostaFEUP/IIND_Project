@@ -1,0 +1,26 @@
+#Version: 0x030217
+#Access: 0
+#Pos: 0,0
+#Size: 947,589
+#BkColor: clBtnFace
+#Gates: 0
+#Style: Standard
+#StayOnTop: 0
+#Object: OnlineView
+  #ID: 0
+  #Pos: 5,5
+  #Size: 930,575
+  #Class1: -1
+  #Class2: 
+  #AlarmsOrEvents: 0
+  #ShowSortButton: 1
+  #ShowFilterButton: 1
+  #ShowConfirmButton: 1
+  #ShowConfirmAllButton: 1
+  #ShowExcludeChkBox: 1
+  #WndBkgndColor: clActiveCaption
+  #AlarmListBkgndColor: clInactiveCaption
+  #Font: Segoe UI,9,0000
+  #UseCustomColumns: 0
+  #Columns: "Active","Attivo","50","Ack","Conferma","50","Message","Messaggio","350","Date","Data","80","Time","Ora","80","Class 1","Classe_1","80","Class 2","Classe_2","80","To Ack","A_Ritenuta","80","Excluded","Escluso","80"
+#EndObj
