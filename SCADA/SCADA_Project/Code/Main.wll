@@ -20,7 +20,3 @@ Function void Time_RW_HMS()
     HMS_aux = GetTimeString(" : ");
     SetStrGateValue("Time",1,HMS_aux);
 end
-
-Function void Button_Window_Exit()
-    CloseWindow();
-end
