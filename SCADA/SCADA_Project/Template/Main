@@ -3,7 +3,7 @@
 #Pos: 0,0
 #Size: 948,589
 #BkColor: clInactiveCaption
-#Gates: 7
+#Gates: 9
   #DIG: ConvFLAG,0
   #DIG: ConvFLAG,4
   #DIG: ConvFLAG,3
@@ -11,34 +11,35 @@
   #DIG: ConvFLAG,1
   #DIG: MacFLAG,0
   #DIG: MacFLAG,1
+  #STR: Time,0
+  #STR: Time,1
 #Style: FixedNoBorder
 #StayOnTop: 0
 #Object: Switch
   #ID: 0
-  #Pos: 225,505
+  #Pos: 215,505
+  #Size: 170,82
+  #TransparentColor: 0,128,128
+  #Cursor: 100
+  #PBmpFile: Buttons(square).bmp
+  #NeedApply: 0
+  #Mode: 0
+  #Access: 0
+#EndObj
+#Object: Switch
+  #ID: 0
+  #Pos: 560,505
   #Size: 170,82
   #TransparentColor: 0,128,128
   #Cursor: 100
   #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
   #Mode: 1
-  #OnMask: 5,0001,0001
   #Access: 0
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 550,505
-  #Size: 170,82
-  #TransparentColor: 0,128,128
-  #Cursor: 100
-  #PBmpFile: Buttons(square).bmp
-  #NeedApply: 0
-  #Mode: 1
-  #Access: 0
-#EndObj
-#Object: Switch
-  #ID: 0
-  #Pos: 110,250
+  #Pos: 110,255
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -49,7 +50,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 110,150
+  #Pos: 110,145
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -71,7 +72,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 380,250
+  #Pos: 380,255
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -82,7 +83,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 380,150
+  #Pos: 380,145
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -104,7 +105,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 485,250
+  #Pos: 485,255
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -115,7 +116,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 485,150
+  #Pos: 485,145
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -137,7 +138,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 760,250
+  #Pos: 760,260
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -148,7 +149,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 760,150
+  #Pos: 760,145
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -181,7 +182,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 240,40
+  #Pos: 240,35
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -203,7 +204,7 @@
 #EndObj
 #Object: Switch
   #ID: 0
-  #Pos: 620,40
+  #Pos: 620,35
   #Size: 87,52
   #TransparentColor: 0,128,128
   #Cursor: 100
@@ -214,25 +215,23 @@
 #EndObj
 #Object: Led
   #ID: 0
-  #Pos: 560,530
+  #Pos: 565,530
   #Size: 27,27
   #Cursor: 0
   #OffPBmpFile: Alarm(blanck).bmp
   #OnPBmpFile: Alarm(red).bmp
   #BmpBkC: 0,128,128
-  #On: 0,6,1
   #Flashing: 5
   #Access: 16384
 #EndObj
 #Object: Led
   #ID: 0
-  #Pos: 690,530
+  #Pos: 695,530
   #Size: 27,27
   #Cursor: 0
   #OffPBmpFile: Alarm(blanck).bmp
   #OnPBmpFile: Alarm(red).bmp
   #BmpBkC: 0,128,128
-  #On: 0,6,1
   #Flashing: 5
   #Access: 16384
 #EndObj
@@ -244,13 +243,12 @@
   #Cursor: 100
   #PBmpFile: Buttons(square).bmp
   #NeedApply: 0
-  #Mode: 1
-  #OnMask: 0,0001,0000
+  #Mode: 0
   #Access: 0
 #EndObj
 #Object: Label
   #ID: 0
-  #Pos: 225,505
+  #Pos: 215,505
   #Size: 170,82
   #BkColor: clNone
   #Cursor: 0
@@ -487,8 +485,8 @@
 #EndObj
 #Object: Label
   #ID: 0
-  #Pos: 555,505
-  #Size: 165,82
+  #Pos: 560,505
+  #Size: 170,82
   #BkColor: clNone
   #Cursor: 0
   #TxtColor: clWindowText
@@ -497,4 +495,174 @@
   #Align: 37
   #Frame: 1
   #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 90,145
+  #Size: 85,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Automático
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 110,255
+  #Size: 85,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Manuntenção
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 110,200
+  #Size: 85,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Manual
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 380,145
+  #Size: 85,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Tool 1
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 380,200
+  #Size: 85,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Tool 2
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 380,255
+  #Size: 85,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Tool 3
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 245,35
+  #Size: 80,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Operar
+  #Align: 21
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 240,90
+  #Size: 85,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,10,0000
+  #Label: Ligar Tapete
+  #Align: 21
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 35,520
+  #Size: 115,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,12,0000
+  #Gate: 7
+  #Label: %s
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 785,520
+  #Size: 115,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,12,0000
+  #Gate: 8
+  #Label: %s
+  #Align: 21
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 35,500
+  #Size: 115,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,12,0000
+  #Label: Date:
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 785,500
+  #Size: 115,52
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,12,0000
+  #Label: Time:
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Button
+  #ID: 0
+  #Pos: 25,25
+  #Size: 170,85
+  #Cursor: 0
+  #Label: Button
+  #Font: Segoe UI,9,0000
+  #FunctionKey: -1
+  #TabOrder: 7
+  #Access: 0
+  #OnClick: Template,Alarms
 #EndObj

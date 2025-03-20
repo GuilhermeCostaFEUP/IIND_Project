@@ -1,0 +1,26 @@
+Function void Main()
+#Startup
+    While(1)
+        Time_RW_DMY();
+        Time_RW_HMS();
+        Sleep(100);
+    end
+end
+
+// ***************************************************************************
+
+Function void Time_RW_DMY()
+    string DMY_aux;
+    DMY_aux = GetDateString("-",true);
+    SetStrGateValue("Time",0,DMY_aux);
+end
+
+Function void Time_RW_HMS()
+    string HMS_aux;
+    HMS_aux = GetTimeString(" : ");
+    SetStrGateValue("Time",1,HMS_aux);
+end
+
+Function void Button_Window_Exit()
+    CloseWindow();
+end
