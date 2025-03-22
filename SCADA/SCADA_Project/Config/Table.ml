@@ -42,3 +42,4 @@ Data:§Data:
 Hora:§Hora:
 T4§T4
 Painel de Alarmes§Painel de Alarmes
+Maquina 1a§Maquina 1a

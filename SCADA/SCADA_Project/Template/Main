@@ -1,7 +1,7 @@
 #Version: 0x030217
 #Access: 0
 #Pos: 0,0
-#Size: 948,589
+#Size: 1046,589
 #BkColor: clInactiveCaption
 #Gates: 10
   #DIG: ConvFLAG,0
@@ -16,157 +16,13 @@
   #NUM: 10,11
 #Style: FixedNoBorder
 #StayOnTop: 0
-#Object: Led
-  #ID: 0
-  #Pos: 90,145
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Led
-  #ID: 0
-  #Pos: 90,200
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Led
-  #ID: 0
-  #Pos: 90,255
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Led
-  #ID: 0
-  #Pos: 225,35
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Led
-  #ID: 0
-  #Pos: 225,90
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Led
-  #ID: 0
-  #Pos: 465,145
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Led
-  #ID: 0
-  #Pos: 465,200
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Led
-  #ID: 0
-  #Pos: 465,255
-  #Size: 17,17
-  #Cursor: 0
-  #OffBmpRes: 31
-  #OnBmpRes: 11
-  #BmpBkC: 0,128,128
-  #Flashing: 0
-  #Access: 0
-#EndObj
-#Object: Bitmap
-  #ID: 0
-  #Pos: 200,150
-  #Size: 175,165
-  #Cursor: 0
-  #PBmpFile: 0,m000.bmp
-  #PBmpFile: 0,m001.bmp
-  #PBmpFile: 0,m002.bmp
-  #PBmpFile: 0,m003.bmp
-  #PBmpFile: 0,m004.bmp
-  #PBmpFile: 0,m005.bmp
-  #PBmpFile: 0,m006.bmp
-  #PBmpFile: 0,m007.bmp
-  #PBmpFile: 0,m008.bmp
-  #PBmpFile: 0,m009.bmp
-  #PBmpFile: 0,m010.bmp
-  #PBmpFile: 0,m011.bmp
-  #PBmpFile: 0,m012.bmp
-  #PBmpFile: 1,m0-1.bmp
-  #PBmpFile: 2,m0-2.bmp
-  #TabOrder: 0
-  #Status: 0,5,6,1
-  #Status: 1,5,6,0
-  #CycleTime: 0,1
-  #CycleTime: 1,0
-  #CycleTime: 2,0
-  #Access: 0
-#EndObj
-#Object: Bitmap
-  #ID: 0
-  #Pos: 575,150
-  #Size: 180,165
-  #Cursor: 0
-  #PBmpFile: 0,m000.bmp
-  #PBmpFile: 0,m001.bmp
-  #PBmpFile: 0,m002.bmp
-  #PBmpFile: 0,m003.bmp
-  #PBmpFile: 0,m004.bmp
-  #PBmpFile: 0,m005.bmp
-  #PBmpFile: 0,m006.bmp
-  #PBmpFile: 0,m007.bmp
-  #PBmpFile: 0,m008.bmp
-  #PBmpFile: 0,m009.bmp
-  #PBmpFile: 0,m010.bmp
-  #PBmpFile: 0,m011.bmp
-  #PBmpFile: 0,m012.bmp
-  #PBmpFile: 1,m0-1.bmp
-  #PBmpFile: 2,m0-2.bmp
-  #TabOrder: 1
-  #Status: 0,6,6,1
-  #Status: 1,6,6,0
-  #CycleTime: 0,1
-  #CycleTime: 1,0
-  #CycleTime: 2,0
-  #Access: 0
-#EndObj
 #Object: Frame
   #ID: 0
   #Pos: 364,465
   #Size: 220,40
   #BkColor: clNone
   #Style: 1
-  #TabOrder: 2
+  #TabOrder: 0
   #Access: 0
   #Object: Led
     #ID: 0
@@ -210,7 +66,7 @@
   #Size: 175,85
   #BkColor: clNone
   #Style: 1
-  #TabOrder: 3
+  #TabOrder: 1
   #Access: 0
   #Object: Label
     #ID: 0
@@ -246,7 +102,7 @@
   #Size: 165,80
   #BkColor: clNone
   #Style: 1
-  #TabOrder: 4
+  #TabOrder: 2
   #Access: 0
   #Object: Label
     #ID: 0
@@ -282,7 +138,7 @@
   #Size: 515,95
   #BkColor: clNone
   #Style: 1
-  #TabOrder: 5
+  #TabOrder: 3
   #Access: 0
   #Object: Button
     #ID: 0
@@ -333,56 +189,17 @@
     #OnClick: Template,Alarms
   #EndObj
 #EndObj
-#Object: Label
-  #ID: 0
-  #Pos: 870,145
-  #Size: 85,52
-  #BkColor: clNone
-  #Cursor: 0
-  #TxtColor: clWindowText
-  #Font: Segoe UI,10,0000
-  #Label: T2
-  #Align: 37
-  #Frame: 1
-  #Access: 16384
-#EndObj
-#Object: Label
-  #ID: 0
-  #Pos: 860,200
-  #Size: 85,52
-  #BkColor: clNone
-  #Cursor: 0
-  #TxtColor: clWindowText
-  #Font: Segoe UI,10,0000
-  #Label: T3
-  #Align: 37
-  #Frame: 1
-  #Access: 16384
-#EndObj
-#Object: Label
-  #ID: 0
-  #Pos: 850,260
-  #Size: 85,52
-  #BkColor: clNone
-  #Cursor: 0
-  #TxtColor: clWindowText
-  #Font: Segoe UI,10,0000
-  #Label: T4
-  #Align: 37
-  #Frame: 1
-  #Access: 16384
-#EndObj
 #Object: Frame
   #ID: 0
   #Pos: 5,310
-  #Size: 940,140
+  #Size: 1035,140
   #BkColor: clNone
   #Style: 1
-  #TabOrder: 6
+  #TabOrder: 4
   #Access: 0
   #Object: Bitmap
     #ID: 0
-    #Pos: 10,15
+    #Pos: 5,15
     #Size: 161,114
     #Cursor: 0
     #PBmpFile: 0,ca1.bmp
@@ -421,7 +238,7 @@
   #EndObj
   #Object: Bitmap
     #ID: 0
-    #Pos: 200,15
+    #Pos: 205,15
     #Size: 161,114
     #Cursor: 0
     #PBmpFile: 0,ca1.bmp
@@ -460,7 +277,7 @@
   #EndObj
   #Object: Bitmap
     #ID: 0
-    #Pos: 390,15
+    #Pos: 425,15
     #Size: 161,114
     #Cursor: 0
     #PBmpFile: 0,ca1.bmp
@@ -499,7 +316,7 @@
   #EndObj
   #Object: Bitmap
     #ID: 0
-    #Pos: 580,15
+    #Pos: 635,15
     #Size: 161,114
     #Cursor: 0
     #PBmpFile: 0,ca1.bmp
@@ -538,7 +355,7 @@
   #EndObj
   #Object: Bitmap
     #ID: 0
-    #Pos: 770,15
+    #Pos: 845,15
     #Size: 156,114
     #Cursor: 0
     #PBmpFile: 0,ca1.bmp
@@ -576,91 +393,430 @@
     #EndObj
   #EndObj
 #EndObj
-#Object: Button
+#Object: Frame
   #ID: 0
-  #Pos: 245,35
-  #Size: 85,50
-  #Cursor: 0
-  #Label: Operar
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 7
+  #Pos: 80,30
+  #Size: 410,290
+  #Descr: Maquina 1a
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 5
   #Access: 0
+  #Object: Led
+    #ID: 0
+    #Pos: 380,115
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 380,170
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 380,230
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 135,60
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 0,115
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 0,170
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 0,225
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 135,5
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 155,60
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Ligar Tapete
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 0
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 20,115
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Automático
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 1
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 20,170
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Manual
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 2
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 20,225
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Manuntenção
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 3
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 290,115
+    #Size: 85,50
+    #Cursor: 0
+    #Label: T1
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 4
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 290,170
+    #Size: 85,50
+    #Cursor: 0
+    #Label: T2
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 5
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 290,225
+    #Size: 85,50
+    #Cursor: 0
+    #Label: T3
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 6
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 155,5
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Operar
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 7
+    #Access: 0
+  #EndObj
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 110,115
+    #Size: 175,165
+    #Cursor: 0
+    #PBmpFile: 0,m000.bmp
+    #PBmpFile: 0,m001.bmp
+    #PBmpFile: 0,m002.bmp
+    #PBmpFile: 0,m003.bmp
+    #PBmpFile: 0,m004.bmp
+    #PBmpFile: 0,m005.bmp
+    #PBmpFile: 0,m006.bmp
+    #PBmpFile: 0,m007.bmp
+    #PBmpFile: 0,m008.bmp
+    #PBmpFile: 0,m009.bmp
+    #PBmpFile: 0,m010.bmp
+    #PBmpFile: 0,m011.bmp
+    #PBmpFile: 0,m012.bmp
+    #PBmpFile: 1,m0-1.bmp
+    #PBmpFile: 2,m0-2.bmp
+    #TabOrder: 8
+    #Status: 0,5,6,1
+    #Status: 1,5,6,0
+    #CycleTime: 0,1
+    #CycleTime: 1,0
+    #CycleTime: 2,0
+    #Access: 0
+  #EndObj
 #EndObj
-#Object: Button
+#Object: Frame
   #ID: 0
-  #Pos: 245,90
-  #Size: 85,50
-  #Cursor: 0
-  #Label: Ligar Tapete
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 8
+  #Pos: 520,30
+  #Size: 410,290
+  #BkColor: clNone
+  #Style: 1
+  #TabOrder: 6
   #Access: 0
-#EndObj
-#Object: Button
-  #ID: 0
-  #Pos: 110,145
-  #Size: 85,50
-  #Cursor: 0
-  #Label: Automático
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 9
-  #Access: 0
-#EndObj
-#Object: Button
-  #ID: 0
-  #Pos: 110,200
-  #Size: 85,50
-  #Cursor: 0
-  #Label: Manual
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 10
-  #Access: 0
-#EndObj
-#Object: Button
-  #ID: 0
-  #Pos: 110,255
-  #Size: 85,50
-  #Cursor: 0
-  #Label: Manuntenção
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 11
-  #Access: 0
-#EndObj
-#Object: Button
-  #ID: 0
-  #Pos: 380,145
-  #Size: 85,50
-  #Cursor: 0
-  #Label: T1
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 12
-  #Access: 0
-#EndObj
-#Object: Button
-  #ID: 0
-  #Pos: 380,200
-  #Size: 85,50
-  #Cursor: 0
-  #Label: T2
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 13
-  #Access: 0
-#EndObj
-#Object: Button
-  #ID: 0
-  #Pos: 380,255
-  #Size: 85,50
-  #Cursor: 0
-  #Label: T3
-  #Font: Segoe UI,9,0000
-  #FunctionKey: -1
-  #TabOrder: 14
-  #Access: 0
+  #Object: Led
+    #ID: 0
+    #Pos: 380,115
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 380,170
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 380,230
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 135,60
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 0,115
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 0,170
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 0,225
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 135,5
+    #Size: 17,17
+    #Cursor: 0
+    #OffBmpRes: 31
+    #OnBmpRes: 11
+    #BmpBkC: 0,128,128
+    #Flashing: 0
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 155,60
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Ligar Tapete
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 0
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 20,115
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Automático
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 1
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 20,170
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Manual
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 2
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 20,225
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Manuntenção
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 3
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 290,115
+    #Size: 85,50
+    #Cursor: 0
+    #Label: T2
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 4
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 290,170
+    #Size: 85,50
+    #Cursor: 0
+    #Label: T3
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 5
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 290,225
+    #Size: 85,50
+    #Cursor: 0
+    #Label: T4
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 6
+    #Access: 0
+  #EndObj
+  #Object: Button
+    #ID: 0
+    #Pos: 155,5
+    #Size: 85,50
+    #Cursor: 0
+    #Label: Operar
+    #Font: Segoe UI,9,0000
+    #FunctionKey: -1
+    #TabOrder: 7
+    #Access: 0
+  #EndObj
+  #Object: Bitmap
+    #ID: 0
+    #Pos: 110,115
+    #Size: 175,165
+    #Cursor: 0
+    #PBmpFile: 0,m000.bmp
+    #PBmpFile: 0,m001.bmp
+    #PBmpFile: 0,m002.bmp
+    #PBmpFile: 0,m003.bmp
+    #PBmpFile: 0,m004.bmp
+    #PBmpFile: 0,m005.bmp
+    #PBmpFile: 0,m006.bmp
+    #PBmpFile: 0,m007.bmp
+    #PBmpFile: 0,m008.bmp
+    #PBmpFile: 0,m009.bmp
+    #PBmpFile: 0,m010.bmp
+    #PBmpFile: 0,m011.bmp
+    #PBmpFile: 0,m012.bmp
+    #PBmpFile: 1,m0-1.bmp
+    #PBmpFile: 2,m0-2.bmp
+    #TabOrder: 8
+    #Status: 0,5,6,1
+    #Status: 1,5,6,0
+    #CycleTime: 0,1
+    #CycleTime: 1,0
+    #CycleTime: 2,0
+    #Access: 0
+  #EndObj
 #EndObj
