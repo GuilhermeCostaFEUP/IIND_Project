@@ -20,3 +20,99 @@ Function void Time_RW_HMS()
     HMS_aux = GetTimeString(" : ");
     SetStrGateValue("Time",1,HMS_aux);
 end
+
+Function void Call_Alarm()
+// Ve falling edge da máquina, ativa gate com isso
+// Gate depois é comparada com sensor de tapete de baixo (fora do código)
+// Dá reset quando valor do sensor do tapete vai para 0
+end
+
+Function void Machine__Mode_Buttons(int MachNum, int ButNum)
+    if(MachNum == 0) Then
+        if(ButNum == 0) Then
+            //SetNumGateValue();
+        else
+            if(ButNum == 1) Then
+                //SetNumGateValue();
+            else
+                if(ButNum == 2) Then
+                    //  SetNumGateValue();
+                end
+            end
+        end
+    else
+        if(MachNum == 1) Then
+            if(ButNum == 0) Then
+            //SetNumGateValue();
+            else
+                if(ButNum == 1) Then
+                    //SetNumGateValue();
+                else
+                    if(ButNum == 2) Then
+                        //  SetNumGateValue();
+                    end
+                end
+            end
+        end
+    end
+end
+
+Function void Machine_Manual_Control(int MachNum, int ButNum)
+    if(MachNum == 0) Then
+        if(GetNumGateValue() == 1)
+            if(ButNum == 0) Then
+                //SetNumGateValue();
+            else
+                if(ButNum == 1) Then
+                    //SetNumGateValue();
+                else
+                    if(ButNum == 2) Then
+                        //SetNumGateValue();
+                    else
+                        if(ButNum == 3) Then
+                            //SetNumGateValue();
+                        else
+                            if(ButNum == 4) Then
+                                //  SetNumGateValue();
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    else
+        if(MachNum == 1) Then
+            if(GetNumGateValue() == 1)
+                if(ButNum == 0) Then
+                    //SetNumGateValue();
+                else
+                    if(ButNum == 1) Then
+                        //SetNumGateValue();
+                    else
+                        if(ButNum == 2) Then
+                            //SetNumGateValue();
+                        else
+                            if(ButNum == 3) Then
+                                //SetNumGateValue();
+                            else
+                                if(ButNum == 4) Then
+                                    //  SetNumGateValue();
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    end
+end
+
+Function void Machine_Maintenance_Control()
+
+end
+
+/*
+NOTA: Mudar func de modo para ter só uma linha :)
+      Mudar func de modo manual para as ferramentas terem só uma var
+      Ver se a func de maintenance mode faz algo
+*/
