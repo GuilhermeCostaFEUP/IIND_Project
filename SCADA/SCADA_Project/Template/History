@@ -3,12 +3,14 @@
 #Pos: 0,0
 #Size: 947,589
 #BkColor: clInactiveBorder
-#Gates: 0
+#Gates: 2
+  #STR: Time,0
+  #STR: Time,1
 #Style: FixedNoBorder
 #StayOnTop: 0
 #Object: HistView
   #ID: 0
-  #Pos: 5,5
+  #Pos: 10,5
   #Size: 935,575
   #Class1: -1
   #Class2: 
@@ -29,11 +31,52 @@
   #ID: 0
   #Pos: 835,10
   #Size: 90,35
-  #Cursor: 0
-  #Label: Exit
+  #Cursor: 100
+  #Label: Back
   #Font: Segoe UI,12,0000
   #FunctionKey: -1
   #TabOrder: 0
   #Access: 0
   #OnClick: Close
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 555,5
+  #Size: 220,47
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clCaptionText
+  #Font: Segoe UI Black,18,0101
+  #Label: Painel de Histórico
+  #Align: 37
+  #Frame: 1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 420,-5
+  #Size: 85,42
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI Semibold,10,0001
+  #Gate: 0
+  #Label: %s
+  #Align: 37
+  #Frame: 1
+  #Access: 16384
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 420,19
+  #Size: 85,37
+  #BkColor: clNone
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI Semibold,10,0001
+  #Gate: 1
+  #Label: %s
+  #Align: 21
+  #Frame: 1
+  #Access: 16384
 #EndObj

@@ -43,3 +43,7 @@ Hora:§Hora:
 T4§T4
 Painel de Alarmes§Painel de Alarmes
 Maquina 1a§Maquina 1a
+Back§Back
+Painel de Histórico§Painel de Histórico
+Painel de Gráficos§Painel de Gráficos
+Painel de Eventos§Painel de Eventos

@@ -1,36 +1,74 @@
+// Variáveis globais
+Global Bool alarm_gate_val = False;
+Global Bool prev_alarm_gate_val = False;
+Global Bool alarm_gate_val2 = False;
+Global Bool prev_alarm_gate_val2 = False;
+Global Bool alarm_flag = False;
+Global Bool alarm_flag2 = False;
+// ***************************************************************************
+
 Function void Main()
 #Startup
     While(1)
-        Time_RW_DMY();
-        Time_RW_HMS();
+        Time_RW();
+        Call_Alarm();
         Sleep(100);
     end
 end
 
 // ***************************************************************************
 
-Function void Time_RW_DMY()
-    string DMY_aux;
-    DMY_aux = GetDateString("-",true);
-    SetStrGateValue("Time",0,DMY_aux);
-end
+Function void Time_RW()
+    // Mete valores de Dia | Mês | Ano na gate Time 0
+    SetStrGateValue("Time",0,GetDateString("-",true));
 
-Function void Time_RW_HMS()
-    string HMS_aux;
-    HMS_aux = GetTimeString(" : ");
-    SetStrGateValue("Time",1,HMS_aux);
+    // Mete valores de Hora | Minuto | Segundo na gate Time 1
+    SetStrGateValue("Time",1,GetTimeString(" : "));
 end
 
 Function void Call_Alarm()
-// Ve falling edge da máquina, ativa gate com isso
+// Ve falling edge das máquinas, ativa gate com isso
 // Gate depois é comparada com sensor de tapete de baixo (fora do código)
-// Dá reset quando valor do sensor do tapete vai para 0
+// Dá reset quando o alarme levantar um sinal Ack
+
+    alarm_gate_val = Check_Bit("1",1,6); // Adquire estado da máquina 1 (ativa/não ativa)
+    alarm_gate_val2 = Check_Bit("1",1,7); // Adquire estado da máquina 2 (ativa/não ativa)
+
+    if(alarm_gate_val == False && prev_alarm_gate_val == True) Then
+        SetDigGateValue("AlarmAux",0,1); // Mete a aux gate 0 a true
+        alarm_flag = True;
+    end
+    if(alarm_gate_val2 == False && prev_alarm_gate_val2 == True) Then
+        SetDigGateValue("AlarmAux",1,1); // Mete a aux gate 1 a true
+        alarm_flag2 = True;
+    end
+
+    /*if(GetEvnGateAckedStatus() == True && alarm_flag == True) Then
+        SetDigGateValue("AlarmAux",0,0); // Mete a aux gate 0 a false
+        alarm_flag = False;
+    end
+    if(GetEvnGateAckedStatus() == True && alarm_flag2 == True) Then
+        SetDigGateValue("AlarmAux",1,0); // Mete a aux gate 1 a false
+        alarm_flag2 = False;
+    end*/
+
+    prev_alarm_gate_val = alarm_gate_val;
+    prev_alarm_gate_val2 = alarm_gate_val2;
 end
 
 Function void Machine__Mode_Buttons(int MachNum, int ButNum)
-    if(MachNum == 0) Then
+    // Mete os valores das gates para a máquina MachNum a 0
+    SetNumGateValue("GateName",(3*MachNum),0);
+    SetNumGateValue("GateName",1+(3*MachNum),0);
+    SetNumGateValue("GateName",2+(3*MachNum),0);
+
+    // Mete o valor da gate para a máquina MachNum relativa ao botão ButNum a 1
+    SetNumGateValue("GateName",ButNum+(3*MachNum),1);
+
+
+    /*if(MachNum == 0) Then
         if(ButNum == 0) Then
-            //SetNumGateValue();
+            //SetNumGateValue("GateName",ButNum+(3*MachNum),1);
         else
             if(ButNum == 1) Then
                 //SetNumGateValue();
@@ -54,11 +92,11 @@ Function void Machine__Mode_Buttons(int MachNum, int ButNum)
                 end
             end
         end
-    end
+    end*/
 end
 
 Function void Machine_Manual_Control(int MachNum, int ButNum)
-    if(MachNum == 0) Then
+    /*if(MachNum == 0) Then
         if(GetNumGateValue() == 1)
             if(ButNum == 0) Then
                 //SetNumGateValue();
@@ -104,12 +142,20 @@ Function void Machine_Manual_Control(int MachNum, int ButNum)
                 end
             end
         end
-    end
+    end*/
 end
 
 Function void Machine_Maintenance_Control()
 
 end
+
+Function bool Check_Bit(String GateName, int GateID, int BitPos)
+    if(BitAnd(GetNumGateValue(GateName,GateID),BitPos) == 0) Then
+        return False;
+    else
+        return True;
+    end
+End
 
 /*
 NOTA: Mudar func de modo para ter só uma linha :)

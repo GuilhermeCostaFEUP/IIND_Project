@@ -1,9 +1,9 @@
 #Version: 0x030217
 #Access: 0
 #Pos: 0,0
-#Size: 1045,589
+#Size: 1019,589
 #BkColor: clInactiveCaption
-#Gates: 10
+#Gates: 16
   #DIG: ConvFLAG,0
   #DIG: ConvFLAG,4
   #DIG: ConvFLAG,3
@@ -14,6 +14,12 @@
   #STR: Time,0
   #STR: Time,1
   #NUM: 10,11
+  #DIG: conv,0
+  #NUM: conv,0
+  #NUM: 1,0
+  #NUM: 2,0
+  #NUM: 1,1
+  #NUM: 1,2
 #Style: FixedNoBorder
 #StayOnTop: 0
 #Object: Frame
@@ -220,8 +226,8 @@
     #PBmpFile: 0,ca16.bmp
     #PBmpFile: 1,ci1.bmp
     #TabOrder: 0
-    #Status: 0,0,6,1
-    #Status: 1,0,6,0
+    #Status: 0,14,13,XXXXXXXXXXXXXXXXXXXXXXXXXX1XXXXX
+    #Status: 1,14,12,32
     #CycleTime: 0,0
     #CycleTime: 1,0
     #Access: 0
@@ -233,6 +239,7 @@
       #PBmpFile: 0,bc1.bmp
       #TabOrder: 0
       #CycleTime: 0,0
+      #Show: 15,13,XXXXXXXXXXXXXXXXXXXXXXXXXX1XXXXX
       #Access: 0
     #EndObj
   #EndObj
@@ -259,8 +266,8 @@
     #PBmpFile: 0,ca16.bmp
     #PBmpFile: 1,ci1.bmp
     #TabOrder: 1
-    #Status: 0,4,6,1
-    #Status: 1,4,6,0
+    #Status: 0,14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1X
+    #Status: 1,14,12,2
     #CycleTime: 0,0
     #CycleTime: 1,0
     #Access: 0
@@ -272,6 +279,7 @@
       #PBmpFile: 0,bc1.bmp
       #TabOrder: 0
       #CycleTime: 0,0
+      #Show: 15,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1X
       #Access: 0
     #EndObj
   #EndObj
@@ -298,8 +306,8 @@
     #PBmpFile: 0,ca16.bmp
     #PBmpFile: 1,ci1.bmp
     #TabOrder: 2
-    #Status: 0,3,6,1
-    #Status: 1,3,6,0
+    #Status: 0,14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XX
+    #Status: 1,14,12,4
     #CycleTime: 0,0
     #CycleTime: 1,0
     #Access: 0
@@ -311,6 +319,7 @@
       #PBmpFile: 0,bc1.bmp
       #TabOrder: 0
       #CycleTime: 0,0
+      #Show: 15,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XX
       #Access: 0
     #EndObj
   #EndObj
@@ -337,8 +346,8 @@
     #PBmpFile: 0,ca16.bmp
     #PBmpFile: 1,ci1.bmp
     #TabOrder: 3
-    #Status: 0,2,6,1
-    #Status: 1,2,6,0
+    #Status: 0,14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX
+    #Status: 1,14,12,8
     #CycleTime: 0,0
     #CycleTime: 1,0
     #Access: 0
@@ -350,6 +359,7 @@
       #PBmpFile: 0,bc1.bmp
       #TabOrder: 0
       #CycleTime: 0,0
+      #Show: 15,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX
       #Access: 0
     #EndObj
   #EndObj
@@ -376,8 +386,8 @@
     #PBmpFile: 0,ca16.bmp
     #PBmpFile: 1,ci1.bmp
     #TabOrder: 4
-    #Status: 0,1,6,1
-    #Status: 1,1,6,0
+    #Status: 0,14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX
+    #Status: 1,14,12,16
     #CycleTime: 0,0
     #CycleTime: 1,0
     #Access: 0
@@ -389,6 +399,7 @@
       #PBmpFile: 0,bc1.bmp
       #TabOrder: 0
       #CycleTime: 0,0
+      #Show: 15,13,XXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX
       #Access: 0
     #EndObj
   #EndObj
@@ -443,6 +454,7 @@
     #OffBmpRes: 31
     #OnBmpRes: 11
     #BmpBkC: 0,128,128
+    #On: 14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1X
     #Flashing: 0
     #Access: 0
   #EndObj
@@ -487,6 +499,7 @@
     #OffBmpRes: 31
     #OnBmpRes: 11
     #BmpBkC: 0,128,128
+    #On: 14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1
     #Flashing: 0
     #Access: 0
   #EndObj
@@ -511,7 +524,7 @@
     #FunctionKey: -1
     #TabOrder: 1
     #Access: 0
-    #OnClick: StartF,Machine_Buttons(0,0)
+    #OnClick: StartF,Machine__Mode_Buttons(0, 0)
   #EndObj
   #Object: Button
     #ID: 0
@@ -523,6 +536,7 @@
     #FunctionKey: -1
     #TabOrder: 2
     #Access: 0
+    #OnClick: StartF,Machine__Mode_Buttons(0,1)
   #EndObj
   #Object: Button
     #ID: 0
@@ -534,6 +548,7 @@
     #FunctionKey: -1
     #TabOrder: 3
     #Access: 0
+    #OnClick: StartF,Machine__Mode_Buttons(0,2)
   #EndObj
   #Object: Button
     #ID: 0
@@ -578,6 +593,7 @@
     #FunctionKey: -1
     #TabOrder: 7
     #Access: 0
+    #OnClick: StartF,Test()
   #EndObj
   #Object: Bitmap
     #ID: 0
@@ -600,8 +616,8 @@
     #PBmpFile: 1,m0-1.bmp
     #PBmpFile: 2,m0-2.bmp
     #TabOrder: 8
-    #Status: 0,5,6,1
-    #Status: 1,5,6,0
+    #Status: 0,14,11,64
+    #Status: 1,14,12,64
     #CycleTime: 0,1
     #CycleTime: 1,0
     #CycleTime: 2,0
@@ -813,8 +829,8 @@
     #PBmpFile: 1,m0-1.bmp
     #PBmpFile: 2,m0-2.bmp
     #TabOrder: 8
-    #Status: 0,5,6,1
-    #Status: 1,5,6,0
+    #Status: 0,14,13,XXXXXXXXXXXXXXXXXXXXXXXX1XXXXXXX
+    #Status: 1,14,12,128
     #CycleTime: 0,1
     #CycleTime: 1,0
     #CycleTime: 2,0
