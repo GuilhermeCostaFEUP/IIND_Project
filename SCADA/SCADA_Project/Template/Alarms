@@ -1,7 +1,7 @@
 #Version: 0x030217
 #Access: 0
 #Pos: 0,0
-#Size: 947,589
+#Size: 1086,589
 #BkColor: clInactiveBorder
 #Gates: 2
   #STR: Time,0
@@ -11,7 +11,7 @@
 #Object: OnlineView
   #ID: 0
   #Pos: 5,5
-  #Size: 935,575
+  #Size: 1075,580
   #Class1: -1
   #Class2: 
   #AlarmsOrEvents: 1
@@ -19,16 +19,16 @@
   #ShowFilterButton: 1
   #ShowConfirmButton: 1
   #ShowConfirmAllButton: 1
-  #ShowExcludeChkBox: 1
+  #ShowExcludeChkBox: 0
   #WndBkgndColor: clActiveCaption
   #AlarmListBkgndColor: clInactiveCaption
   #Font: Segoe UI,9,0000
-  #UseCustomColumns: 0
-  #Columns: "Active","Attivo","50","Ack","Conferma","50","Message","Messaggio","350","Date","Data","80","Time","Ora","80","Class 1","Classe_1","80","Class 2","Classe_2","80","To Ack","A_Ritenuta","80","Excluded","Escluso","80"
+  #UseCustomColumns: 1
+  #Columns: "Active","Attivo","55","Ack","Conferma","55","Message","Messaggio","600","Date","Data","120","Time","Ora","120","To Ack","A_Ritenuta","120"
 #EndObj
 #Object: Button
   #ID: 0
-  #Pos: 835,20
+  #Pos: 980,20
   #Size: 90,35
   #Cursor: 100
   #Label: Back
@@ -40,7 +40,7 @@
 #EndObj
 #Object: Label
   #ID: 0
-  #Pos: 585,15
+  #Pos: 670,15
   #Size: 220,47
   #BkColor: clNone
   #Cursor: 0
@@ -53,7 +53,7 @@
 #EndObj
 #Object: Label
   #ID: 0
-  #Pos: 500,5
+  #Pos: 535,5
   #Size: 85,42
   #BkColor: clNone
   #Cursor: 0
@@ -67,7 +67,7 @@
 #EndObj
 #Object: Label
   #ID: 0
-  #Pos: 500,29
+  #Pos: 535,29
   #Size: 85,37
   #BkColor: clNone
   #Cursor: 0

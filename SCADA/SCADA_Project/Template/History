@@ -1,7 +1,7 @@
 #Version: 0x030217
 #Access: 0
 #Pos: 0,0
-#Size: 947,589
+#Size: 1086,589
 #BkColor: clInactiveBorder
 #Gates: 2
   #STR: Time,0
@@ -11,7 +11,7 @@
 #Object: HistView
   #ID: 0
   #Pos: 10,5
-  #Size: 935,575
+  #Size: 1065,600
   #Class1: -1
   #Class2: 
   #TimeRange: 3600
@@ -24,24 +24,12 @@
   #WndBkgndColor: clBtnFace
   #Font: Segoe UI,9,0000
   #DefaultServer: Local
-  #UseCustomColumns: 0
-  #Columns: "Message","Messaggio","350","Start Date","Data_di_inizio","80","Start Time","Ora_di_inizio","80","End Date","Data_di_fine","80","End Time","Ora_di_fine","80","Class 1","Classe_1","80","Class 2","Classe_2","80"
-#EndObj
-#Object: Button
-  #ID: 0
-  #Pos: 835,10
-  #Size: 90,35
-  #Cursor: 100
-  #Label: Back
-  #Font: Segoe UI,12,0000
-  #FunctionKey: -1
-  #TabOrder: 0
-  #Access: 0
-  #OnClick: Close
+  #UseCustomColumns: 1
+  #Columns: "Message","Messaggio","580","Start Date","Data_di_inizio","120","Start Time","Ora_di_inizio","120","End Date","Data_di_fine","120","End Time","Ora_di_fine","120"
 #EndObj
 #Object: Label
   #ID: 0
-  #Pos: 555,5
+  #Pos: 630,5
   #Size: 220,47
   #BkColor: clNone
   #Cursor: 0
@@ -79,4 +67,16 @@
   #Align: 21
   #Frame: 1
   #Access: 16384
+#EndObj
+#Object: Button
+  #ID: 0
+  #Pos: 980,10
+  #Size: 90,35
+  #Cursor: 100
+  #Label: Back
+  #Font: Segoe UI,12,0000
+  #FunctionKey: -1
+  #TabOrder: 0
+  #Access: 0
+  #OnClick: Close
 #EndObj

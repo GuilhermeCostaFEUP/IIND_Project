@@ -47,3 +47,10 @@ Back§Back
 Painel de Histórico§Painel de Histórico
 Painel de Gráficos§Painel de Gráficos
 Painel de Eventos§Painel de Eventos
+Conveyor not moving after piece processed for machine 1!!!§Conveyor not moving after piece processed for machine 1!!!
+Conveyor not moving after piece processed for machine 2!!!§Conveyor not moving after piece processed for machine 2!!!
+Start Date§Start Date
+Start Time§Start Time
+End Date§End Date
+End Time§End Time
+To Ack§To Ack
