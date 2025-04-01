@@ -3,7 +3,7 @@
 #Pos: 0,0
 #Size: 1086,589
 #BkColor: clInactiveCaption
-#Gates: 12
+#Gates: 15
   #NUM: 1,0
   #NUM: 2,0
   #NUM: 1,1
@@ -16,6 +16,9 @@
   #NUM: tool_m2,1
   #EVN: ConvAlarm,0
   #EVN: ConvAlarm,1
+  #DIG: AlarmAux,0
+  #NUM: op_tapete_m1,1
+  #NUM: op_tapete_m2,1
 #Style: FixedNoBorder
 #StayOnTop: 0
 #Object: Frame
@@ -150,9 +153,9 @@
   #Access: 0
   #Object: Button
     #ID: 0
-    #Pos: 260,10
+    #Pos: 197,10
     #Size: 120,80
-    #Cursor: 0
+    #Cursor: 100
     #Label: Eventos
     #Font: Segoe UI,14,0000
     #FunctionKey: -1
@@ -162,9 +165,9 @@
   #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 10,10
+    #Pos: 65,10
     #Size: 120,80
-    #Cursor: 0
+    #Cursor: 100
     #Label: Histórico
     #Font: Segoe UI,14,0000
     #FunctionKey: -1
@@ -174,25 +177,13 @@
   #EndObj
   #Object: Button
     #ID: 0
-    #Pos: 135,10
+    #Pos: 330,10
     #Size: 120,80
-    #Cursor: 0
-    #Label: Gráficos
-    #Font: Segoe UI,14,0000
-    #FunctionKey: -1
-    #TabOrder: 2
-    #Access: 0
-    #OnClick: Template,Graph
-  #EndObj
-  #Object: Button
-    #ID: 0
-    #Pos: 385,10
-    #Size: 120,80
-    #Cursor: 0
+    #Cursor: 100
     #Label: Alarmes
     #Font: Segoe UI,14,0000
     #FunctionKey: -1
-    #TabOrder: 3
+    #TabOrder: 2
     #Access: 0
     #OnClick: Template,Alarms
   #EndObj
@@ -495,7 +486,7 @@
     #OffBmpRes: 31
     #OnBmpRes: 11
     #BmpBkC: 0,128,128
-    #On: 8,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX
+    #On: 13,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1X
     #Flashing: 0
     #Access: 0
   #EndObj
@@ -507,45 +498,57 @@
     #OffBmpRes: 31
     #OnBmpRes: 11
     #BmpBkC: 0,128,128
-    #On: 8,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX
+    #On: 13,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1
     #Flashing: 0
     #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 250,85
+    #Size: 22,23
+    #Cursor: 0
+    #OffBmpRes: 118
+    #OnBmpRes: 113
+    #BmpBkC: 0,128,128
+    #On: 2,13,XXXXXXXXXXXXXXXXXXXXXXX1XXXXXXXX
+    #Flashing: 5
+    #Access: 16384
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 20,115
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Automático
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 0
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(0,0)
+    #OnClick: StartF,Toggle_aut1()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 20,170
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Manual
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 1
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(0,1)
+    #OnClick: StartF,Toggle_man1()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 20,225
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Manuntenção
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 2
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(0,2)
+    #OnClick: StartF,Toggle_meint1()
   #EndObj
   #Object: Bitmap
     #ID: 0
@@ -565,12 +568,12 @@
     #PBmpFile: 0,m010.bmp
     #PBmpFile: 0,m011.bmp
     #PBmpFile: 0,m012.bmp
-    #PBmpFile: 1,m0-1.bmp
-    #PBmpFile: 2,m0-2.bmp
+    #PBmpFile: 1,m0-2.bmp
+    #PBmpFile: 2,m0-1.bmp
     #TabOrder: 3
     #Status: 0,2,11,64
-    #Status: 1,2,12,64
-    #Status: 2,5,6,4
+    #Status: 1,5,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXX1XX
+    #Status: 2,2,12,64
     #CycleTime: 0,1
     #CycleTime: 1,0
     #CycleTime: 2,0
@@ -580,13 +583,13 @@
     #ID: 0
     #Pos: 145,60
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Ligar Tapete
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 4
     #Access: 0
-    #OnClick: StartF,Machine__Util_Buttons(0,1)
+    #OnClick: StartF,Toggle_tapete_m1()
   #EndObj
   #Object: Button
     #ID: 0
@@ -598,43 +601,57 @@
     #FunctionKey: -1
     #TabOrder: 5
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(0,0)
+    #OnClick: StartF,Toggle_tool1_m1()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 295,175
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: T2
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 6
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(0,1)
+    #OnClick: StartF,Toggle_tool2_m1()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 295,230
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: T3
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 7
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(0,2)
+    #OnClick: StartF,Toggle_tool3_m1()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 145,5
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Operar
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 8
     #Access: 0
-    #OnClick: StartF,Machine__Util_Buttons(0,0)
+    #OnClick: StartF,Toggle_operar_m1()
+  #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 235,65
+    #Size: 50,17
+    #BkColor: clNavy
+    #Cursor: 0
+    #TxtColor: clHighlightText
+    #Font: Segoe UI,9,0000
+    #Label: Rotating
+    #Align: 32
+    #Frame: 1
+    #Show: 2,13,XXXXXXXXXXXXXXXXXXXXXXX1XXXXXXXX
+    #Access: 0
   #EndObj
 #EndObj
 #Object: Frame
@@ -725,7 +742,7 @@
     #OffBmpRes: 31
     #OnBmpRes: 11
     #BmpBkC: 0,128,128
-    #On: 9,13,XXXXXXXXXXXXXXXXXXXXXXXXXXX1XXXX
+    #On: 14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1X
     #Flashing: 0
     #Access: 0
   #EndObj
@@ -737,105 +754,117 @@
     #OffBmpRes: 31
     #OnBmpRes: 11
     #BmpBkC: 0,128,128
-    #On: 9,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXX1XXX
+    #On: 14,13,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX1
     #Flashing: 0
     #Access: 0
+  #EndObj
+  #Object: Led
+    #ID: 0
+    #Pos: 265,80
+    #Size: 22,23
+    #Cursor: 0
+    #OffBmpRes: 118
+    #OnBmpRes: 113
+    #BmpBkC: 0,128,128
+    #On: 2,13,XXXXXXXXXXXXXXXXXXXXXX1XXXXXXXXX
+    #Flashing: 5
+    #Access: 16384
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 35,115
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Automático
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 0
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(1,0)
+    #OnClick: StartF,Toggle_aut2()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 35,170
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Manual
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 1
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(1,1)
+    #OnClick: StartF,Toggle_man2()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 35,225
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Manuntenção
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 2
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(1,2)
+    #OnClick: StartF,Toggle_meint2()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 160,55
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Ligar Tapete
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 3
     #Access: 0
-    #OnClick: StartF,Machine__Util_Buttons(1,1)
+    #OnClick: StartF,Toggle_tapete_m2()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 310,115
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: T2
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 4
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(1,0)
+    #OnClick: StartF,Toggle_tool1_m2()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 310,170
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: T3
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 5
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(1,1)
+    #OnClick: StartF,Toggle_tool2_m2()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 310,225
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: T4
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 6
     #Access: 0
-    #OnClick: StartF,Machine__Tool_Buttons(1,2)
+    #OnClick: StartF,Toggle_tool3_m2()
   #EndObj
   #Object: Button
     #ID: 0
     #Pos: 160,0
     #Size: 85,50
-    #Cursor: 0
+    #Cursor: 100
     #Label: Operar
     #Font: Segoe UI,9,0000
     #FunctionKey: -1
     #TabOrder: 7
     #Access: 0
-    #OnClick: StartF,Machine__Util_Buttons(1,0)
+    #OnClick: StartF,Toggle_operar_m2()
   #EndObj
   #Object: Bitmap
     #ID: 0
@@ -855,15 +884,57 @@
     #PBmpFile: 0,m010.bmp
     #PBmpFile: 0,m011.bmp
     #PBmpFile: 0,m012.bmp
-    #PBmpFile: 1,m0-1.bmp
-    #PBmpFile: 2,m0-2.bmp
+    #PBmpFile: 1,m0-2.bmp
+    #PBmpFile: 2,m0-1.bmp
     #TabOrder: 8
     #Status: 0,2,11,128
-    #Status: 1,2,12,128
-    #Status: 2,4,6,4
+    #Status: 1,4,11,4
+    #Status: 2,2,12,128
     #CycleTime: 0,1
     #CycleTime: 1,0
     #CycleTime: 2,0
     #Access: 0
   #EndObj
+  #Object: Label
+    #ID: 0
+    #Pos: 255,60
+    #Size: 50,17
+    #BkColor: clNavy
+    #Cursor: 0
+    #TxtColor: clHighlightText
+    #Font: Segoe UI,9,0000
+    #Label: Rotating
+    #Align: 32
+    #Frame: 1
+    #Show: 2,13,XXXXXXXXXXXXXXXXXXXXXX1XXXXXXXXX
+    #Access: 0
+  #EndObj
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 220,470
+  #Size: 45,17
+  #BkColor: clBtnFace
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,9,0000
+  #Label: Aux ON
+  #Align: 32
+  #Frame: 1
+  #Show: 12,6,1
+  #Access: 0
+#EndObj
+#Object: Label
+  #ID: 0
+  #Pos: 220,490
+  #Size: 90,17
+  #BkColor: clBtnFace
+  #Cursor: 0
+  #TxtColor: clWindowText
+  #Font: Segoe UI,9,0000
+  #Label: AlarmGate ON
+  #Align: 32
+  #Frame: 1
+  #Show: 12,6,1
+  #Access: 0
 #EndObj

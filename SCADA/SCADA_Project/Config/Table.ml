@@ -54,3 +54,7 @@ Start Time§Start Time
 End Date§End Date
 End Time§End Time
 To Ack§To Ack
+Projeto de IIND - Fábrica§Projeto de IIND - Fábrica
+Aux ON§Aux ON
+AlarmGate ON§AlarmGate ON
+Rotating§Rotating

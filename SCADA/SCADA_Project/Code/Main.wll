@@ -5,6 +5,8 @@ Global Bool alarm_gate_val2 = False;
 Global Bool prev_alarm_gate_val2 = False;
 Global Bool alarm_flag = False;
 Global Bool alarm_flag2 = False;
+Global Unsigned Alarm_Timer = 0;
+Global Unsigned Alarm_Timer2 = 0;
 // ***************************************************************************
 
 Function void Main()
@@ -35,20 +37,34 @@ Function void Call_Alarm()
     alarm_gate_val2 = Check_Bit("1",1,7); // Adquire estado da máquina 2 (ativa/não ativa)
 
     if(alarm_gate_val == False && prev_alarm_gate_val == True) Then
-        SetDigGateValue("AlarmAux",0,1); // Mete a aux gate 0 a true
         alarm_flag = True;
     end
     if(alarm_gate_val2 == False && prev_alarm_gate_val2 == True) Then
-        SetDigGateValue("AlarmAux",1,1); // Mete a aux gate 1 a true
         alarm_flag2 = True;
     end
 
-    if(GetEvnGateAckedStatus("ConvAlarm",0) == True && alarm_flag == True) Then
-        SetDigGateValue("AlarmAux",0,0); // Mete a aux gate 0 a false
+    if(alarm_flag == False) Then
+        Alarm_Timer = GetActualSeconds();
+    end
+    if(alarm_flag2 == False) Then
+        Alarm_Timer2 = GetActualSeconds();
+    end
+
+    if((GetActualSeconds() - Alarm_Timer > 10) && (Check_Bit("1",2,1))) Then
+        SetDigGateValue("AlarmAux",0,1);
+    end
+    if((GetActualSeconds() - Alarm_Timer2 > 10) && (Check_Bit("1",2,3))) Then
+        SetDigGateValue("AlarmAux",1,1);
+    end
+
+    if(Check_Bit("1",1,1) == False) Then
+        SetDigGateValue("AlarmAux",0,0);
+        SetEvnGateAckedStatus("ConvAlarm",0);
         alarm_flag = False;
     end
-    if(GetEvnGateAckedStatus("ConvAlarm",1) == True && alarm_flag2 == True) Then
-        SetDigGateValue("AlarmAux",1,0); // Mete a aux gate 1 a false
+    if (Check_Bit("1",1,3) == False) Then
+        SetDigGateValue("AlarmAux",1,0);
+        SetEvnGateAckedStatus("ConvAlarm",1);
         alarm_flag2 = False;
     end
 
@@ -56,112 +72,92 @@ Function void Call_Alarm()
     prev_alarm_gate_val2 = alarm_gate_val2;
 end
 
-Function void Machine__Mode_Buttons(int MachNum, int ButNum)
-    if(MachNum == 0) Then
-        // Mete o valor da gate para a máquina MachNum relativa ao botão ButNum a 1
-        SetNumGateValue("botoes_m1",1,pow(2,ButNum));
-    else
-        if(MachNum == 1) Then
-            // Mete o valor da gate para a máquina MachNum relativa ao botão ButNum a 1
-            SetNumGateValue("botoes_m2",1,pow(2,ButNum));
-        else
-            MessageBox("An error has ocurred in Machine_Mode_Buttons() | Wrong machine index (MachNum)", "Error!!!");
-        end
-    end
-end
-
-Function void Machine_Manual_Control(int MachNum, int ButNum)
-    /*if(MachNum == 0) Then
-        if(GetNumGateValue() == 1)
-            if(ButNum == 0) Then
-                //SetNumGateValue();
-            else
-                if(ButNum == 1) Then
-                    //SetNumGateValue();
-                else
-                    if(ButNum == 2) Then
-                        //SetNumGateValue();
-                    else
-                        if(ButNum == 3) Then
-                            //SetNumGateValue();
-                        else
-                            if(ButNum == 4) Then
-                                //  SetNumGateValue();
-                            end
-                        end
-                    end
-                end
-            end
-        end
-    else
-        if(MachNum == 1) Then
-            if(GetNumGateValue() == 1)
-                if(ButNum == 0) Then
-                    //SetNumGateValue();
-                else
-                    if(ButNum == 1) Then
-                        //SetNumGateValue();
-                    else
-                        if(ButNum == 2) Then
-                            //SetNumGateValue();
-                        else
-                            if(ButNum == 3) Then
-                                //SetNumGateValue();
-                            else
-                                if(ButNum == 4) Then
-                                    //  SetNumGateValue();
-                                end
-                            end
-                        end
-                    end
-                end
-            end
-        end
-    end*/
-end
-
-Function void Machine_Maintenance_Control()
-    // Desligar máquina
-end
-
-Function void Machine__Tool_Buttons(int MachNum, int ButNum)
-    if(MachNum == 0) Then
-        // Mete o valor da gate para a máquina MachNum relativa ao botão ButNum a 1
-        SetNumGateValue("tool_m1",1,pow(2,ButNum));
-    else
-        if(MachNum == 1) Then
-            // Mete o valor da gate para a máquina MachNum relativa ao botão ButNum a 1
-            SetNumGateValue("tool_m2",1,pow(2,ButNum));
-        else
-            MessageBox("An error has ocurred in Machine_Tool_Buttons() | Wrong machine index (MachNum)", "Error!!!");
-        end
-    end
-end
-
-Function void Machine__Util_Buttons(int MachNum, int ButNum)
-    if(MachNum == 0) Then
-        // Mete o valor da gate para a máquina MachNum relativa ao botão ButNum a 1
-        SetNumGateValue("tool_m1",1,pow(2,3+ButNum));
-    else
-        if(MachNum == 1) Then
-            // Mete o valor da gate para a máquina MachNum relativa ao botão ButNum a 1
-            SetNumGateValue("tool_m2",1,pow(2,3+ButNum));
-        else
-            MessageBox("An error has ocurred in Machine_Util_Buttons() | Wrong machine index (MachNum)", "Error!!!");
-        end
-    end
-end
-
 Function bool Check_Bit(String GateName, int GateID, int BitPos)
-    if(BitAnd(GetNumGateValue(GateName,GateID),BitPos) == 0) Then
+    if(BitAnd(GetNumGateValue(GateName,GateID),pow(2,BitPos)) == 0) Then
         return False;
     else
         return True;
     end
 End
 
-/*
-NOTA: Mudar func de modo para ter só uma linha :)
-      Mudar func de modo manual para as ferramentas terem só uma var
-      Ver se a func de maintenance mode faz algo
-*/
+//------------------------------------------------------Rui-------------
+
+Function Void Toggle_aut1()
+  SetNumGateValue("botoes_m1",1,1);
+End
+
+
+Function Void Toggle_man1()
+  SetNumGateValue("botoes_m1",1,2);
+End
+
+Function Void Toggle_meint1()
+  SetNumGateValue("botoes_m1",1,4);
+End
+
+//-------------------------------------------------------------M2------------------------------------------//
+
+
+Function Void Toggle_aut2()
+  SetNumGateValue("botoes_m2",1,1);
+End
+
+
+Function Void Toggle_man2()
+  SetNumGateValue("botoes_m2",1,2);
+End
+
+Function Void Toggle_meint2()
+  SetNumGateValue("botoes_m2",1,4);
+End
+
+
+
+
+Function Void Toggle_tool1_m1()
+  SetNumGateValue("tool_m1",1,1);
+End
+Function Void Toggle_tool2_m1()
+  SetNumGateValue("tool_m1",1,2);
+End
+Function Void Toggle_tool3_m1()
+  SetNumGateValue("tool_m1",1,4);
+End
+
+Function Void Toggle_operar_m1()
+  int current_state;
+  current_state = GetNumGateValue("op_tapete_m1",1);
+  current_state = BitXor(current_state, 1);
+  SetNumGateValue("op_tapete_m1",1,current_state);
+End
+
+Function Void Toggle_tapete_m1()
+  int current_state;
+  current_state = GetNumGateValue("op_tapete_m1",1);
+  current_state = BitXor(current_state, 2);
+  SetNumGateValue("op_tapete_m1",1,current_state);
+End
+
+
+
+Function Void Toggle_tool1_m2()
+  SetNumGateValue("tool_m2",1,1);
+End
+Function Void Toggle_tool2_m2()
+  SetNumGateValue("tool_m2",1,2);
+End
+Function Void Toggle_tool3_m2()
+  SetNumGateValue("tool_m2",1,4);
+End
+Function Void Toggle_operar_m2()
+  int current_state;
+  current_state = GetNumGateValue("op_tapete_m2",1);
+  current_state = BitXor(current_state, 1);
+  SetNumGateValue("op_tapete_m2",1,current_state);
+End
+Function Void Toggle_tapete_m2()
+  int current_state;
+  current_state = GetNumGateValue("op_tapete_m2",1);
+  current_state = BitXor(current_state, 2);
+  SetNumGateValue("op_tapete_m2",1,current_state);
+End
